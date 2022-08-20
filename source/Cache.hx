@@ -116,7 +116,6 @@ class Cache extends MusicBeatState
 		}
 
 
-		#end
 		FlxG.switchState(new TitleState());
 	}
 
