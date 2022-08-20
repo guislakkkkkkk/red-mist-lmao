@@ -21,7 +21,7 @@ import haxe.Exception;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
-#if sys
+#if cpp
 import sys.FileSystem;
 import sys.io.File;
 #end
