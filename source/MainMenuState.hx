@@ -241,7 +241,12 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
+										PlayState.storyPlaylist = ['humiliation,mist,doomsday'];
+										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
+										PlayState.campaignScore = 0;
+										PlayState.campaignMisses = 0;
+										LoadingState.loadAndSwitchState(new PlayState(), true);
+										FreeplayState.destroyFreeplayVocals();
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
