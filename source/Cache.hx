@@ -12,7 +12,7 @@ import flixel.util.FlxTimer;
 import flixel.text.FlxText;
 import flixel.system.FlxSound;
 import lime.app.Application;
-#if windows
+#if MODS_ALLOWED
 import Discord.DiscordClient;
 #end
 import openfl.display.BitmapData;
@@ -21,7 +21,7 @@ import haxe.Exception;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
-#if cpp
+#if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -47,11 +47,12 @@ class Cache extends MusicBeatState
 		bitmapData = new Map<String,FlxGraphic>();
 		bitmapData2 = new Map<String,FlxGraphic>();
 
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('funkay'));
+		Paste this:
+		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('loadingScreens/loadingscreen-' + FlxG.random.int(1, 4)));
 		menuBG.screenCenter();
 		add(menuBG);
 
-		shitz = new FlxText(12, 12, 0, "Loading...", 12);
+		shitz = new FlxText(12, 12, 0, "Port by Guislakkkk", 12);
 		shitz.scrollFactor.set();
 		shitz.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(shitz);
