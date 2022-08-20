@@ -12,7 +12,7 @@ import flixel.util.FlxTimer;
 import flixel.text.FlxText;
 import flixel.system.FlxSound;
 import lime.app.Application;
-#if android
+#if windows
 import Discord.DiscordClient;
 #end
 import openfl.display.BitmapData;
@@ -21,7 +21,7 @@ import haxe.Exception;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
-#if !desktop
+#if cpp
 import sys.FileSystem;
 import sys.io.File;
 #end
