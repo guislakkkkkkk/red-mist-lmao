@@ -1,8 +1,8 @@
 {
 	"songs": [
-		["Humiliation", "squidward", [103, 174, 175]],
-		["Mist", "lolward", [105, 157, 121]],
-		["Doomsday", "darkward", [171, 186, 183]]
+		["humiliation", "squidward", [103, 174, 175]],
+		["mist", "lolward", [105, 157, 121]],
+		["doomsday", "darkward", [171, 186, 183]]
 	],
 
 	"weekCharacters": [
